@@ -29,5 +29,12 @@ pipeline{
             '''
         }
          }
+	 stage('uptime'){
+ 	steps{
+	sh ''' 
+	uptime
+	'''
+       } 
+     }
     }
  }
